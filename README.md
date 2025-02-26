@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/logo.png" alt="Tiny GraphRAG Logo" width="512"/>
+  <img src=".github/logo.jpeg" alt="Tiny GraphRAG Logo" width="512"/>
 </p>
 
 # Tiny GraphRAG
