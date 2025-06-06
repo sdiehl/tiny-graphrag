@@ -108,7 +108,6 @@ and `flash-attn`.
 
 ```bash
 poetry install --with nvidia
-poetry run pip install flash-attn --no-build-isolation
 ```
 
 ## Library
