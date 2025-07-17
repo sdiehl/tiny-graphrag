@@ -30,7 +30,7 @@ cdlib = "^0.4.0"
 igraph = "^0.11.8"
 leidenalg = "^0.10.2"
 tqdm = "^4.66.6"
-termcolor = "^2.5.0"
+termcolor = "^3.1.0"
 
 [tool.poetry.group.apple]
 optional = true
