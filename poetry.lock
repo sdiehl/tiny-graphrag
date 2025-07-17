@@ -1686,23 +1686,27 @@ test = ["build", "mypy", "pytest", "pytest-xdist", "ruff", "twine", "types-reque
 
 [[package]]
 name = "gliner"
-version = "0.2.13"
+version = "0.2.21"
 description = "Generalist model for NER (Extract any entity types from texts)"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "gliner-0.2.13-py3-none-any.whl", hash = "sha256:a8798aef78b8a7322dc4f785c15d58c526f86698ec95feb892b500b5be507437"},
-    {file = "gliner-0.2.13.tar.gz", hash = "sha256:0afa0aa82f7f31dcc1befb667cb69d1a9760173078d770517381bf7c3c6b378f"},
+    {file = "gliner-0.2.21-py3-none-any.whl", hash = "sha256:05f9b8f31bccd310e8d02796badb853e5c61e313af2afa252f791512d265311e"},
+    {file = "gliner-0.2.21.tar.gz", hash = "sha256:44bc73b3e8b1a2804b333912fca729eb1fb0065f8f7b34f601bc95aa39abc749"},
 ]
 
 [package.dependencies]
-huggingface-hub = ">=0.21.4"
+huggingface_hub = ">=0.21.4"
 onnxruntime = "*"
 sentencepiece = "*"
 torch = ">=2.0.0"
 tqdm = "*"
 transformers = ">=4.38.2"
+
+[package.extras]
+gpu = ["onnxruntime-gpu"]
+tokenizers = ["camel_tools", "indic-nlp-library", "janome", "jieba", "langdetect", "python-mecab-ko", "spacy"]
 
 [[package]]
 name = "gliner-spacy"
@@ -7713,4 +7717,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.13"
-content-hash = "bed75ac94fff702469a95332d034c7400a2bd4bd58c71870196891d3f08e5781"
+content-hash = "e02d3da6a670c9acef9e6b9dc09351c35d1390914ef7b22654a35f97acb43300"
