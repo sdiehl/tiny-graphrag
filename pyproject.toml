@@ -14,7 +14,7 @@ graphrag = "tiny_graphrag.main:main"
 
 [tool.poetry.dependencies]
 python = ">=3.12,<3.13"
-networkx = "^3.4.2"
+networkx = "^3.5"
 gliner = "^0.2.13"
 glirel = "^0.1.4"
 spacy = "^3.8.2"
