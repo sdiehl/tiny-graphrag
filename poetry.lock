@@ -1686,23 +1686,28 @@ test = ["build", "mypy", "pytest", "pytest-xdist", "ruff", "twine", "types-reque
 
 [[package]]
 name = "gliner"
-version = "0.2.13"
+version = "0.2.22"
 description = "Generalist model for NER (Extract any entity types from texts)"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "gliner-0.2.13-py3-none-any.whl", hash = "sha256:a8798aef78b8a7322dc4f785c15d58c526f86698ec95feb892b500b5be507437"},
-    {file = "gliner-0.2.13.tar.gz", hash = "sha256:0afa0aa82f7f31dcc1befb667cb69d1a9760173078d770517381bf7c3c6b378f"},
+    {file = "gliner-0.2.22-py3-none-any.whl", hash = "sha256:9d12298db26d53b95c49d684ec5d768fbd20833501612bb9865c95e6ec4359c1"},
+    {file = "gliner-0.2.22.tar.gz", hash = "sha256:29202a4ce4f7ee3d7cd0a579dfc977e716e38263a8b41371576af0406b3081db"},
 ]
 
 [package.dependencies]
-huggingface-hub = ">=0.21.4"
+huggingface_hub = ">=0.21.4"
 onnxruntime = "*"
 sentencepiece = "*"
 torch = ">=2.0.0"
 tqdm = "*"
-transformers = ">=4.38.2"
+transformers = ">=4.38.2,<=4.51.0"
+
+[package.extras]
+gpu = ["onnxruntime-gpu"]
+stanza = ["langdetect", "stanza"]
+tokenizers = ["camel_tools", "indic-nlp-library", "janome", "jieba3", "langdetect", "python-mecab-ko", "spacy", "stanza"]
 
 [[package]]
 name = "gliner-spacy"
@@ -7713,4 +7718,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.13"
-content-hash = "bed75ac94fff702469a95332d034c7400a2bd4bd58c71870196891d3f08e5781"
+content-hash = "bbe19c406a8ad010e7470be2008e63be54020ef45040ef9e5e6efbc0679169c6"
