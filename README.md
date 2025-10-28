@@ -112,7 +112,7 @@ poetry install --with nvidia
 
 ## Library
 
-You can also this library directly.
+You can also use this library directly.
 
 ```python
 from tiny_graphrag import store_document, QueryEngine, init_db
