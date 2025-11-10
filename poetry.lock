@@ -2875,13 +2875,13 @@ rapidfuzz = ">=3.9.0,<4.0.0"
 
 [[package]]
 name = "llama-cpp-python"
-version = "0.3.1"
+version = "0.3.16"
 description = "Python bindings for the llama.cpp library"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "llama_cpp_python-0.3.1.tar.gz", hash = "sha256:75ec8374960b6353c254e55a48e7c7783abf6bcb9178ba0f655490738e5a9004"},
+    {file = "llama_cpp_python-0.3.16.tar.gz", hash = "sha256:34ed0f9bd9431af045bb63d9324ae620ad0536653740e9bb163a2e1fcb973be6"},
 ]
 
 [package.dependencies]
@@ -7706,4 +7706,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<3.13"
-content-hash = "225744260915ba1331ac329b721b91584c703124904428e5a292e157e18cafa7"
+content-hash = "6b9d4429bf99a4df9593ed0e5f15d377d2434b5d7f00cf5551eb025113d0f40d"
