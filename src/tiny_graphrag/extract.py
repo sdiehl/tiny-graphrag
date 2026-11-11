@@ -30,7 +30,8 @@ def nlp_model(threshold: float, entity_types: tuple[str], device: str = DEVICE):
         "threshold": threshold,
         "map_location": device,
     }
-    spacy.require_gpu()  # type: ignore
+    if device != "cpu":
+        spacy.require_gpu()  # type: ignore
 
     nlp = spacy.blank("en")
     nlp.add_pipe("gliner_spacy", config=custom_spacy_config)
