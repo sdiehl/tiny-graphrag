@@ -21,7 +21,6 @@ from tiny_graphrag.visualize import visualize, visualize_communities
 
 def process_document(
     filepath: str,
-    title: Optional[str] = None,
     max_chunks: int = -1,
     entity_types: List[str] = MIN_ENTITY_TYPES,
     relation_types: List[str] = DEFAULT_RELS_LIST,
@@ -106,7 +105,7 @@ def store_document(
 
     with session_local() as session:
         # Process document
-        chunks, graph = process_document(filepath, title, max_chunks)
+        chunks, graph = process_document(filepath, max_chunks)
 
         # Store document
         doc = Document(content=open(filepath).read(), title=title or filepath)
